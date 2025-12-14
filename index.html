@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yanis BUHOT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg w-100">
+        <div class="container d-flex justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#projet">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home" class="hero-section d-flex align-items-start">
+        <div class="container text-start text-white">
+            <h1 class="display-2"><strong>Yanis</strong><span class="text-primary"> <strong>BUHOT</strong></span></h1><br>
+            <p class="fs-5">Web developper & Product Designer</p><br>
+            <div class="mt-3">
+                <a href="./CV_BUHOT_Yanis.pdf" download class="btn btn-outline-light">Resume</a> 
+                <a href="https://www.linkedin.com/in/yanis-buhot-706282254/" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+            </div>            
+        </div>
+    </header>
+    
+    <section id="about" class="about-section py-5">
+        <div class="container text-white">
+            <div class="row align-items-center">
+                <!-- Image à gauche -->
+                <div class="col-md-6 text-center order-md-1">
+                    <img src="./img/moi.png" alt="Photo de Yanis Buhot" class="img-fluid photo-shadow">
+                </div>                               
+                <!-- Texte à droite -->
+                <div class="col-md-6 text-md-start order-md-2 align-self-start mt-n3">
+                    <h1 class=" mb-4">ABOUT</h1>
+                    <p>
+    Hi, I'm <strong class="text-primary">Yanis Buhot</strong>, a 
+    <strong class="text-primary">21-year-old</strong> web developer. 
+    Passionate about <strong class="text-primary">web development</strong> and 
+    <strong class="text-primary">interactive applications</strong>, I enjoy building 
+    efficient, scalable, and user-focused digital solutions.
+</p>
+<p>
+    Currently in my <strong class="text-primary">third year</strong> of a 
+    <strong class="text-primary">Bachelor's degree in Multimedia and Internet Technologies</strong>, 
+    I specialize in <strong class="text-primary">development</strong> and enjoy working on 
+    projects that combine <strong class="text-primary">clean code</strong> and 
+    <strong class="text-primary">solid user experiences</strong>.
+</p>
+<p><strong class="text-primary">Paris, France</strong></p>
+
+                </div>
+            </div>
+        </div>
+
+<!-- Bouton Retour en haut -->
+<a href="#home" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+    </section>
+
+    <div class="section-separator"></div>
+
+
+<!-- Section Skills -->
+<div class="skills-list">
+    <h1 id="skills" class="text-center text-white mb-5">SKILLS</h1>
+    <!-- Développement -->
+    <div class="skill-item" onclick="toggleSkill('dev-details', this)">
+        <h2 class="text-white text-start">Development</h2>
+        <span class="arrow">▼</span>
+        <div class="skill-details" id="dev-details">
+    <div class="skills-container">
+
+        <div class="skill-element">
+            <i class="devicon-html5-plain colored"></i>
+            <span class="skill-name">HTML5</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-css3-plain colored"></i>
+            <span class="skill-name">CSS3</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-javascript-plain colored"></i>
+            <span class="skill-name">JavaScript</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-react-original colored"></i>
+            <span class="skill-name">React</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-angularjs-plain colored"></i>
+            <span class="skill-name">Angular</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-nodejs-plain colored"></i>
+            <span class="skill-name">Node.js</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-java-plain colored"></i>
+            <span class="skill-name">Java</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-spring-plain colored"></i>
+            <span class="skill-name">Spring Boot</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-php-plain colored"></i>
+            <span class="skill-name">PHP</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-mysql-plain colored"></i>
+            <span class="skill-name">MySQL</span>
+        </div>
+
+        <div class="skill-element">
+            <i class="devicon-python-plain colored"></i>
+            <span class="skill-name">Python</span>
+        </div>
+
+    </div>
+</div>
+        
+        </div>
+        
+    </div>
+
+    <!-- Design -->
+    <div class="skill-item" onclick="toggleSkill('design-details', this)">
+        <h2 class="text-white text-start">Design</h2>
+        <span class="arrow">▼</span>
+        <div class="skill-details" id="design-details">
+            <div class="skills-container">
+                <div class="skill-element">
+                    <i class="devicon-figma-plain colored"></i>
+                    <span class="skill-name">Figma</span>
+                </div>
+                <div class="skill-element">
+                    <i class="devicon-photoshop-line colored"></i>
+                    <span class="skill-name">Photoshop</span>
+                </div>
+                <div class="skill-element">
+                    <i class="devicon-illustrator-line colored"></i>
+                    <span class="skill-name">Illustrator</span>
+                </div>
+                <div class="skill-element">
+                    <i class="devicon-blender-original colored"></i>
+                    <span class="skill-name">Blender</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Général -->
+    <div class="skill-item" onclick="toggleSkill('general-details', this)">
+        <h2 class="text-white text-start">General</h2>
+        <span class="arrow">▼</span>
+        <div class="skill-details" id="general-details">
+            <p><strong>Languages:</strong> French (Native), English (B2), Spanish (A2)</p>
+            <p><strong>Digital Marketing:</strong> SEO, Google Ads, Instagram Ads</p>
+            <p><strong>Social Media Management:</strong> TikTok, Instagram, YouTube</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bouton Retour en haut -->
+<a href="#home" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+</section>
+<div class="section-separator"></div>
+
+<!-- Section Projets -->
+<section id="projet" class="projects-section py-5">
+    <div class="container text-white">
+        <h1 class="text-center mb-5">PROJETS</h1>
+
+        <!-- Navigation des projets -->
+        <div class="project-nav text-center">
+            <span class="dot active" onclick="showProject(0)"></span>
+            <span class="dot" onclick="showProject(1)"></span>
+            <span class="dot" onclick="showProject(2)"></span>
+            <span class="dot" onclick="showProject(3)"></span>
+        </div>
+
+        <!-- Contenu des projets -->
+        <div class="project-content">
+            <!-- Projet 1 -->
+            <div class="project-item active">
+                <h2 class="text-primary">Interactive Web Documentary – Train Conductor</h2><br>
+                <div class="row align-items-center">
+                    
+                    <!-- Project Image -->
+                    <div class="col-md-6 text-center">
+                        <img src="./img/acc_webdoc.png" alt="Web Documentary" class="img-fluid project-image">
+                    </div>
+                    <!-- Project Description -->
+                    <div class="col-md-6 text-md-start">
+                        <p>
+                            As part of a <span class="text-primary">team project</span>, we developed an 
+                            <span class="text-primary">interactive web documentary</span> that explores 
+                            the profession of a <span class="text-primary">train conductor</span>. 
+                            This <span class="text-primary">multi-media website</span> seamlessly 
+                            integrates <span class="text-primary">images, videos, audio, and text</span> 
+                            to create an <span class="text-primary">engaging and educational experience</span>.
+                        </p>
+                        <p>
+                            This project was <span class="text-primary">entirely designed and developed</span> 
+                            by my team and me, combining both <span class="text-primary">technical and creative skills</span> 
+                            to bring this digital documentary to life.
+                        </p>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- Skills Used (Left) -->
+                        <div class="col-md-6 text-md-start mt-4">
+                            <h4 class="text-secondary mt-3">Skills Used:</h4>
+                            <ul>
+                                <li>🖥️ <span class="text-primary">Web Development</span> – HTML, CSS, JavaScript, Bootstrap</li>
+                                <li>📊 <span class="text-primary">Project Management</span> – Task coordination & team leadership</li>
+                                <li>🎨 <span class="text-primary">UX/UI Design</span> – User experience and visual design</li>
+                                <li>📰 <span class="text-primary">Journalistic Writing</span> – Researching and crafting compelling content</li>
+                                <li>📷 <span class="text-primary">Photography & Video Production</span> – Capturing and editing high-quality media</li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Website Link (Right) -->
+                        <div class="col-md-6 text-md-end">
+                            <h4 class="text-secondary mt-3">Website Link:</h4>
+                            <p>
+                                <a href="https://webdocletraindevieduncheminot.vercel.app" 
+                                   target="_blank" 
+                                   class="text-primary fw-bold">
+                                   View Project
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+
+            
+<!-- Projet 2 -->
+<div class="project-item">
+    <h2 class="text-success">Data Visualization Project – Biocontrol</h2><br>
+    <div class="row align-items-center">
+
+        <!-- Project Image -->
+        <div class="col-md-6 text-center">
+            <img src="./img/acc_biodata.png" alt="Data Visualization" class="img-fluid project-image">
+        </div>
+
+        <!-- Project Description -->
+        <div class="col-md-6 text-md-start">
+            <p>
+                As part of a <span class="text-success">team project</span>, we developed a 
+                <span class="text-success">data visualization platform</span> focused on 
+                <span class="text-success">Biocontrol</span>. Using <span class="text-success">Chart.js</span>, 
+                we created interactive charts to present key insights in an 
+                <span class="text-success">engaging and intuitive way</span>.
+            </p>
+            <p>
+                This project was <span class="text-success">entirely designed and developed</span> 
+                by my team and me, combining both <span class="text-success">technical and analytical skills</span> 
+                to transform complex datasets into visually appealing and easy-to-understand graphics.
+            </p>
+        </div>
+
+        <div class="row">
+            <!-- Skills Used (Left) -->
+            <div class="col-md-6 text-md-start mt-4">
+                <h4 class="text-secondary mt-3">Skills Used:</h4>
+                <ul>
+                    <li>🖥️ <span class="text-success">Web Development</span> – HTML, CSS, JavaScript, Bootstrap</li>
+                    <li>📊 <span class="text-success">Data Visualization</span> – Using visual elements to present my work effectively</li>
+                    <li>🎨 <span class="text-success">UX/UI Design</span> – Wireframing, Prototyping, and User Interface Optimization</li>
+                    <li>🛠️ <span class="text-success">Project Management</span> – Structuring my workflow efficiently</li>
+                    <li>💡 <span class="text-success">Collaboration & Workflow Optimization</span> – Applying agile methods for personal productivity</li>
+                </ul>
+            </div>
+
+            <!-- Website Link (Right) -->
+            <div class="col-md-6 text-md-end">
+                <h4 class="text-secondary mt-3">Website Link:</h4>
+                <p>
+                    <a href="https://bio-data-sae-301-303.vercel.app" 
+                       target="_blank" 
+                       class="text-success fw-bold">
+                       View Project
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+            <!-- Projet 3 -->
+<div class="project-item">
+    <h2 class="text-warning">Personal Portfolio</h2><br>
+    <div class="row align-items-center">
+
+        <!-- Project Image -->
+        <div class="col-md-6 text-center">
+            <img src="./img/acc_port.png" alt="Portfolio" class="img-fluid project-image">
+        </div>
+
+        <!-- Project Description -->
+        <div class="col-md-6 text-md-start">
+            <p>
+                This portfolio is a <span class="text-warning">fully custom-built website</span> designed 
+                and developed <strong> by myself</strong>  to showcase my work, skills, and creative approach. 
+                It reflects everything I have learned so far in <span class="text-warning">web development</span>, 
+                <span class="text-warning">UX/UI design</span>, and <span class="text-warning">graphic design</span>.
+            </p>
+            <p>
+                The goal of this project was to create a <span class="text-warning">modern, responsive, and visually engaging</span> 
+                online presence while applying the <strong>best practices</strong> in front-end development, user experience, and interface design.
+            </p>
+        </div>
+
+        <div class="row">
+            <!-- Skills Used (Left) -->
+            <div class="col-md-6 text-md-start mt-4">
+                <h4 class="text-secondary mt-3">Skills Used:</h4>
+                <ul>
+                    <li>🖥️ <span class="text-warning">Full Frontend Development</span> – HTML, CSS, JavaScript, Bootstrap</li>
+                    <li>🎨 <span class="text-warning">UI/UX Design</span> – Wireframing, Prototyping, User Experience</li>
+                    <li>🖌️ <span class="text-warning">Graphic Design</span> – Custom visual assets, animations</li>
+                    <li>⚡ <span class="text-warning">Interactive Animations</span> – Smooth transitions & responsiveness</li>
+                    <li>📱 <span class="text-warning">Mobile Optimization</span> – Ensuring a seamless experience on all devices</li>
+                </ul>
+            </div>
+
+            <!-- Website Link (Right) -->
+            <div class="col-md-6 text-md-end">
+                <h4 class="text-secondary mt-3">Website Link:</h4>
+                <p>
+                    <a href="URL_DU_PORTFOLIO" 
+                       target="_blank" 
+                       class="text-warning fw-bold">
+                       View Portfolio
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Game Project -->
+<div class="project-item">
+    <h2 class="text-purple">Starvore.io — Game Project</h2><br>
+    <div class="row align-items-center">
+
+        <!-- Project Image -->
+        <div class="col-md-6 text-center">
+            <img src="./img/acc_game.png" alt="Starvore.io Game" class="img-fluid project-image">
+        </div>
+
+        <!-- Project Description -->
+        <div class="col-md-6 text-md-start">
+            <p>
+                <span class="text-purple">Starvore.io</span> is a <strong>2D browser-based game developed in JavaScript</strong>, 
+                focused on delivering a smooth, dynamic, and engaging gameplay experience.  
+                This project highlights my ability to design <span class="text-purple">interactive game mechanics</span> 
+                and structured game logic.
+            </p>
+            <p>
+                The main goal was to build a <span class="text-purple">fully playable game prototype</span> 
+                featuring player movement, collision detection, enemy behavior, and progression systems, 
+                while maintaining clean and maintainable code.
+            </p>
+        </div>
+
+        <div class="row">
+            <!-- Skills Used -->
+            <div class="col-md-6 text-md-start mt-4">
+                <h4 class="text-secondary mt-3">Skills Used:</h4>
+                <ul>
+                    <li>🎮 <span class="text-purple">Game Development</span> – JavaScript, HTML5 Canvas</li>
+                    <li>🧠 <span class="text-purple">Game Logic</span> – Collisions, scoring system, enemy AI</li>
+                    <li>⚙️ <span class="text-purple">Algorithmic Thinking</span> – Movement, interactions, physics</li>
+                    <li>🎨 <span class="text-purple">Game Design</span> – Visual feedback & player experience</li>
+                    <li>🚀 <span class="text-purple">Performance Optimization</span> – Smooth animations & gameplay</li>
+                </ul>
+            </div>
+
+            <!-- Game Link -->
+            <div class="col-md-6 text-md-end">
+                <h4 class="text-secondary mt-3">Game Link:</h4>
+                <p>
+                    <a href="URL_DU_JEU" 
+                       target="_blank" 
+                       class="text-purple fw-bold">
+                       Play the Game
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        </div>
+    </div>
+ <!-- Bouton Retour en haut -->
+<a href="#home" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+</section>
+
+<div id="contact" class="section-separator"></div>
+
+<!-- Section Contact -->
+<section class="contact-section py-5">
+    <div class="container text-white text-center">
+        <h1 class="mb-4">CONTACT</h1>
+        <p class="mb-4">
+            Whether you have a project in mind, a question, or just want to connect, 
+            feel free to reach out! I’m always open to new opportunities and collaborations.
+        </p>
+
+        <!-- Icônes Contact -->
+        <div class="contact-icons">
+            <a href="mailto:yanisbuhotpro@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yanis-buhot-706282254/" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/Yanisbht" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bouton Retour en haut -->
+<a href="#home" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container text-center">
+        <p>© 2025 Yanis Buhot - All rights reserved.</p>
+    </div>
+</footer>
+
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</body>
+</html>
